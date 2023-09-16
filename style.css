@@ -1,0 +1,134 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+  background: #fff;
+}
+header {
+  position: fixed;
+  width: 100%;
+  right: 0;
+  top: 0;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: transparent;
+  padding: 25px 6%;
+  font-family: "Roboto", sans-serif;
+}
+.navlist {
+  display: flex;
+}
+.navlist li {
+  position: relative;
+}
+.navlist a {
+  color: #000;
+  font-weight: 500;
+  font-size: 1.2rem;
+  padding: 10px 25px;
+}
+.navlist a:hover {
+  color: #3d3d3d;
+}
+.navlist a::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 3px;
+  background: #3d3d3d;
+  left: 0;
+  bottom: -4px;
+  transition: ease 0.4s;
+}
+.navlist a:hover:after {
+  width: 100%;
+  background: #000;
+}
+.h-btn a {
+  color: #000;
+  font-weight: 500;
+  padding: 8px 26px;
+  border: 2px solid transparent;
+  transition: ease 0.4s;
+  font-family: "Poppins", sans-serif;
+}
+
+.h-btn .sign-up {
+  color: #fff;
+  border: 2px solid #000;
+  border-radius: 30px;
+  background: #000;
+}
+.h-btn .sign-up:hover {
+  color: #000;
+  background: transparent;
+}
+.h-btn .sign-in {
+  color: #000;
+  background: transparent;
+  border: 2px solid #000;
+  border-radius: 30px;
+}
+.h-btn .sign-in:hover {
+  background: transparent;
+  border: 2px solid #3d3d3d;
+}
+
+.main {
+    width: 80%;
+    height: 80%;
+    position: absolute;
+    z-index: 11111;
+    top: 15%;
+    left: 50%;
+    transform: translateX(-50%);
+
+}
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 100px;
+}
+#CFirstH {
+    font-size: 8.43rem;
+    font-weight: 200;
+    z-index: 2;
+    position: absolute;
+    margin: -300px 0px 0px 0px;
+    font-family: 'Lobster', cursive;
+}
+#CLastH {
+    color: #000;
+    font-size: 9.68rem;
+    z-index: 2;
+    position: absolute;
+    margin: 300px 0px 0px 0px;
+    font-family: "Playfair Display", serif;
+    filter: grayscale(1);
+}
+#CLastH:hover{
+    filter: none;
+}
+img {
+    width: 360px;
+    height: 245px;
+    -webkit-transform: rotate(-5deg);
+    filter: grayscale(1);
+    border: none;
+}
+.firstimg img {
+    width: 100%;
+    height: 100%;
+}
+
